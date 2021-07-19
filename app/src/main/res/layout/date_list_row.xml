@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_calendar"
+    android:layout_width="50dp"
+    android:layout_height="78dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/row_padding_vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/shape_rect_calendar">
+
+    <TextView
+        android:id="@+id/day_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFF"
+        android:fontFamily="@font/notosanskrregular"
+        android:includeFontPadding="false"/>
+
+    <TextView
+        android:id="@+id/date_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_below="@id/day_1"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:fontFamily="@font/robotomedium"
+        android:includeFontPadding="false"/>
+
+    <View
+        android:id="@+id/order_underline"
+        android:layout_width="22dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#00b896"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+</LinearLayout>

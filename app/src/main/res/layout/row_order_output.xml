@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:weightSum="360"
+    android:orientation="horizontal"
+    android:background="@drawable/shape_stroke_order_list">
+
+    <TextView
+        android:id="@+id/tv_order_output_date"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="130"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/notosanskrregular"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:layout_marginLeft="30dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_order_output_price"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="200"
+        android:gravity="right"
+        android:fontFamily="@font/notosanskrregular"
+        android:textSize="16dp"
+        android:textColor="#000"/>
+
+</LinearLayout>

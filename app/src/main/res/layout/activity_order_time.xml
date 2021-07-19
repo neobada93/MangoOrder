@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.order.OrderTimeActivity"
+    android:background="#cc000000"
+    android:weightSum="640"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:gravity="center_vertical|right">
+
+
+        <ImageButton
+            android:id="@+id/ib_close"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginRight="14dp"
+            android:background="@color/zxing_transparent"
+            android:src="@drawable/ic_ib_close"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="160"/>
+
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:background="@drawable/shape_stroke_order_remain"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주문가능시간"
+            android:textSize="16dp"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+    <TextView
+        android:id="@+id/tv_order_enable_time"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="10시간 50분"
+        android:textSize="35dp"
+        android:textColor="#FFF"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주문가능 시간을 확인하세요."
+        android:textSize="16dp"
+        android:textColor="#FFF"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="150"/>
+
+</LinearLayout>

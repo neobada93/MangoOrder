@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">망고오더</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_login">로그인</string>
+    <string name="title_logout">로그아웃</string>
+    <string name="title_group">mango</string>
+    <string name="login_fail">가입하지 않은 아이디이거나, 잘못된 비밀번호입니다.</string>
+    <string name="logout_ask">로그아웃 하시겠습니까?</string>
+    <string name="email_blank">아이디를 입력해주세요.</string>
+    <string name="email_inVaild">이메일 형식이 맞지 않습니다.</string>
+    <string name="password_blank">비밀번호를 입력해주세요.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="content">content</string>
+</resources>

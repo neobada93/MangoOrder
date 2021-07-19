@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:padding="10dp"
+    android:weightSum="360"
+    android:orientation="horizontal"
+    android:background="@drawable/shape_stroke_order_list">
+
+        <TextView
+            android:id="@+id/tv_list_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="150"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/tv_list_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/tv_list_unit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_list_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="115"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"/>
+
+</LinearLayout>

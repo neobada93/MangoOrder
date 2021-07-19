@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_burgundy">#9b3c4c</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#FFAE29</color>
+    <color name="colorAccent">#FFAE29</color>
+<!--    <color name="colorAccent">#008577</color>-->
+
+    <color name="colorRadioBtn2">#cbc3bf</color>
+    <color name="colorRadioBtn1">#9b3c4c</color>
+    <color name="colorRadioBtn3">#dddddd</color>
+    <color name="sel_text">#333</color>
+    <color name="login_1">#eee5e0</color>
+    <color name="test">#66ffffff</color>
+
+    <color name="tab_menu">#f5efec</color>
+    <color name="tab_text">#3e3936</color>
+    <color name="tab_border">#cbc3bf</color>
+
+    <color name="white">#FFFFFF</color>
+</resources>

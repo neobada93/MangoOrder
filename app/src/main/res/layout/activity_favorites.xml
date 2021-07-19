@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="640"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:orientation="horizontal"
+        android:weightSum="320">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="270"
+            android:gravity="left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="즐겨찾기"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:fontFamily="@font/notosanskrmedium"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ib_close_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_btnclose"
+                android:background="?attr/selectableItemBackground"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="580"
+        android:weightSum="580"
+        tools:context=".view.order.additem.AddItemDialog"
+        android:id="@+id/activity_tab"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60"
+            android:id="@+id/tlTab_2"
+            app:tabGravity="fill"
+            app:tabMode="scrollable"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60"
+            android:background="@drawable/shape_stroke_order_list"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="270"
+                android:gravity="left">
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/ib_search_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_btnsearch"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_gravity="right|center_vertical"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60"
+            android:background="@drawable/shape_stroke_under"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:text="선택목록 (총 품목수 : 1개)"
+                android:fontFamily="@font/notosanskrregular"
+                android:id="@+id/tv_favorites_count"/>
+
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="360"
+            android:id="@+id/vpContent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_save_favorites"
+                android:layout_width="126dp"
+                android:layout_height="42dp"
+                android:text="즐겨찾기저장"
+                android:background="@drawable/shape_order_link"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:fontFamily="@font/notosanskrmedium"
+                android:textColor="#FFF"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

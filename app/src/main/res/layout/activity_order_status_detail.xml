@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.order.status.OrderStatusDetailActivity"
+    android:orientation="vertical"
+    android:weightSum="640">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:background="#FFAE29"
+        android:orientation="horizontal"
+        android:weightSum="320">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ib_order_status_detail_arrow_left"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/ic_arrow_prev" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="220"
+            android:gravity="center">
+
+            <TextView android:id="@+id/tv_order_status_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주문상세"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="580"
+        android:weightSum="580"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView android:id="@+id/tv_order_status_detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="#39352b"
+            android:letterSpacing="-0.05"
+            android:lineSpacingExtra="2.5sp"
+            android:gravity="center_horizontal"
+            android:text="일자 : 2020-01-01"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#707070"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="48"
+            android:orientation="horizontal"
+            android:background="#f9f9f9">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="140"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:textColor="#39352b"
+                    android:letterSpacing="-0.05"
+                    android:lineSpacingExtra="8sp"
+                    android:text="품명"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="45dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="140"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:textColor="#39352b"
+                    android:letterSpacing="-0.05"
+                    android:lineSpacingExtra="8sp"
+                    android:text="수량"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="65dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="180"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:paddingRight="45dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:textColor="#39352b"
+                    android:lineSpacingExtra="6sp"
+                    android:layout_gravity="center"
+                    android:text="금액"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d4d1ca"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="450"
+            android:weightSum="450"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_order_status_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d4d1ca"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:orientation="horizontal"
+            android:weightSum="360">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="140"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:textColor="#39352b"
+                    android:letterSpacing="-0.05"
+                    android:lineSpacingExtra="8sp"
+                    android:text="합계"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="220"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:paddingRight="25dp">
+
+                <TextView android:id="@+id/tv_order_status_detail_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textSize="20sp"
+                    android:textColor="#00b896"
+                    android:lineSpacingExtra="6sp"
+                    android:layout_gravity="center"
+                    android:text="6,000,000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:textColor="#39352b"
+                    android:lineSpacingExtra="7sp"
+                    android:layout_gravity="center"
+                    android:text="원"
+                    android:layout_marginLeft="2dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_stroke_order_list"
+    android:paddingBottom="1dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true">
+
+            <LinearLayout android:id="@+id/ly_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:paddingTop="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout android:id="@+id/ly_notice_category"
+                        android:layout_width="53dp"
+                        android:layout_height="21dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/shape_stroke_notice"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_notice_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:textColor="#ffae29"
+                            android:gravity="center"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_board_date"
+                        android:layout_width="0dp"
+                        android:layout_weight="90"
+                        android:layout_height="25dp"
+                        android:gravity="right"
+                        android:text="2020-01-01"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="300"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/ly_board_title"
+                        android:layout_width="0dp"
+                        android:layout_weight="280"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/iv_new"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_new"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_board_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="공지사항제목"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="#000"
+                            android:gravity="center_vertical"
+                            android:textSize="16dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ly_board_date"
+                        android:layout_width="0dp"
+                        android:layout_weight="20"
+                        android:layout_height="25dp"
+                        android:gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:orientation="horizontal"
+                        android:weightSum="20">
+
+                        <ImageView
+                            android:id="@+id/iv_notice_arrow"
+                            android:layout_width="0dp"
+                            android:layout_weight="20"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_notice_arrow" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ly_arrow"
+                        android:layout_width="0dp"
+                        android:layout_weight="30"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/expandableLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintTop_toBottomOf="@id/ly_top"
+                app:layout_constraintVertical_bias="1.0"
+                android:padding="5dp"
+                android:background="#f4f4f4">
+
+                <!--<ImageView
+                    android:id="@+id/iv_notice_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@id/tv_board_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.ortiz.touchview.TouchImageView
+                    android:id="@+id/tiv_notice_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@id/tv_board_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>-->
+
+                <com.github.chrisbanes.photoview.PhotoView
+                    android:id="@+id/photo_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@id/tv_board_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_board_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f4f4f4"
+                    android:text="@string/content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="16dp"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout android:id="@+id/ly_login_main"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:weightSum="440">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_title_login"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="390"
+            android:weightSum="360"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="300"
+                android:weightSum="390"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_logo_login"
+                        android:layout_gravity="center"/>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="30"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="30"/>
+
+                <LinearLayout
+                    android:id="@+id/ly_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="left"
+                    android:layout_weight="50"
+                    android:weightSum="300"
+                    android:orientation="horizontal"
+                    android:background="@drawable/shape_login_off">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/iv_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_id_off"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/ed_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="240"
+                        android:background="@null"
+                        android:hint="ID"
+                        android:textSize="16sp"
+                        android:gravity="left"
+                        android:layout_gravity="center"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"/>
+
+                <LinearLayout
+                    android:id="@+id/ly_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="left"
+                    android:layout_weight="50"
+                    android:weightSum="300"
+                    android:orientation="horizontal"
+                    android:background="@drawable/shape_login_off">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/iv_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pass_off"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/ed_pass"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="240"
+                        android:background="@null"
+                        android:hint="password"
+                        android:textSize="16sp"
+                        android:gravity="left"
+                        android:layout_gravity="center"
+                        android:inputType="textPassword"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50">
+
+                    <CheckBox android:id="@+id/cb_save_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아이디 저장"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ly_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="60"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_order_send"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:text="로그인"
+                        android:background="@drawable/shape_order_link"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/notosanskrmedium"
+                        android:textColor="#FFF"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

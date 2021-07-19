@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.order.OrderActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:weightSum="530"
+            android:layout_above="@+id/ly_order_total">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60"
+                android:background="#FFAE29"
+                android:orientation="horizontal"
+                android:weightSum="320">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/ib_cal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:src="@drawable/ic_cal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="220"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_order_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notosanskrmedium"
+                        android:includeFontPadding="false"
+                        android:text="주문등록"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/ib_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:src="@drawable/ic_btnhome" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="140"
+                android:orientation="vertical"
+                android:weightSum="140">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="50"
+                    android:background="#FFAE29"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageButton
+                        android:id="@+id/btn_calendar_left"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:src="@drawable/ic_arrow_prev" />
+
+                    <TextView
+                        android:id="@+id/tv_order_date"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/robotomedium"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="20dp" />
+
+                    <ImageButton
+                        android:id="@+id/btn_calendar_right"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:src="@drawable/ic_arrow_next" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="90"
+                    android:background="#FFAE29"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <include layout="@layout/content_calendar" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="75"
+                android:background="#FFAE29">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_rect_round"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp">
+
+                    <ImageButton
+                        android:id="@+id/ib_order_time"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center"
+                        android:background="@color/zxing_transparent"
+                        android:src="@drawable/ic_btn_order_time"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:id="@+id/btn_order_cancel"
+                        android:layout_width="90dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_order_link"
+                        android:fontFamily="@font/notosanskrregular"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="주문취소"
+                        android:textColor="#FFF"
+                        android:textSize="16dp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/btn_order_last"
+                        android:layout_width="108dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_order_history"
+                        android:fontFamily="@font/notosanskrregular"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="최근주문내역"
+                        android:textColor="#FFF"
+                        android:textSize="16dp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_order_favorites"
+                        android:layout_width="90dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_order_history"
+                        android:fontFamily="@font/notosanskrregular"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="즐겨찾기"
+                        android:textColor="#FFF"
+                        android:textSize="16dp" />
+
+                    <Button
+                        android:id="@+id/btn_add_item"
+                        android:layout_width="90dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/shape_add_item"
+                        android:fontFamily="@font/notosanskrregular"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="품목추가"
+                        android:textColor="#FFF"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:background="@drawable/shape_stroke_under">
+
+                    <TextView
+                        android:id="@+id/tv_total_cnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/notosanskrregular"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:text="주문목록 (총 품목수 : 0개)"
+                        android:textColor="#000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_order_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="(단위 : 원)"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_order"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="200"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <FrameLayout
+                    android:id="@+id/frame_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFF">
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ly_order_total"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_weight="110"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical"
+        android:weightSum="110"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:orientation="horizontal"
+            android:weightSum="330"
+            android:gravity="center">
+            <TextView
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="총 금액"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:fontFamily="@font/notosanskrmedium"
+                android:includeFontPadding="false"/>
+            <TextView
+                android:id="@+id/tv_order_total_amount"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="130"
+                android:text="0"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="#EB5545"
+                android:fontFamily="@font/robotobold"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_order_send"
+                android:layout_width="270dp"
+                android:layout_height="55dp"
+                android:text="등록"
+                android:background="@drawable/shape_order_link"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="#FFF"
+                android:fontFamily="@font/notosanskrregular"
+                android:includeFontPadding="false"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.order.status.OrderStatusFragment"
+    android:weightSum="550"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="69"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_stroke_all"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView android:id="@+id/tv_order_status_stdt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2020-01-01"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+            <ImageButton android:id="@+id/ib_order_status_stdt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_iconly_broken_calendar"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="?attr/selectableItemBackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="~"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
+
+            <TextView android:id="@+id/tv_order_status_eddt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2021-12-31"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+            <ImageButton android:id="@+id/ib_order_status_eddt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_iconly_broken_calendar"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="?attr/selectableItemBackground"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#707070"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="horizontal"
+        android:background="#f9f9f9">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="140"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:textColor="#39352b"
+                android:letterSpacing="-0.05"
+                android:lineSpacingExtra="8sp"
+                android:text="일자"
+                android:layout_gravity="center"
+                android:layout_marginLeft="55dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="220"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:paddingRight="55dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:textColor="#39352b"
+                android:lineSpacingExtra="6sp"
+                android:layout_gravity="center"
+                android:text="금액"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d4d1ca"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="380"
+        android:weightSum="380"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_order_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d4d1ca"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="140"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:textColor="#39352b"
+                android:letterSpacing="-0.05"
+                android:lineSpacingExtra="8sp"
+                android:text="합계"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="220"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:paddingRight="25dp">
+
+            <TextView android:id="@+id/tv_order_status_total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="#00b896"
+                android:lineSpacingExtra="6sp"
+                android:layout_gravity="center"
+                android:text="6,000,000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:textColor="#39352b"
+                android:lineSpacingExtra="7sp"
+                android:layout_gravity="center"
+                android:text="원"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

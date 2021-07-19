@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:weightSum="640">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="62"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_newlogo"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="500"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="330"
+            android:weightSum="548">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="100"
+                android:weightSum="300"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:id="@+id/tv_hi0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="안녕하세요 :)"
+                        android:textSize="26dp"
+                        android:textColor="#FFF"
+                        android:fontFamily="@font/notosanskrmedium"
+                        android:includeFontPadding="false"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_hi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="안녕하세요 :)"
+                        android:textSize="26dp"
+                        android:textColor="#FFF"
+                        android:fontFamily="@font/notosanskrmedium"
+                        android:includeFontPadding="false"
+                        android:layout_gravity="center_vertical"/>
+
+                    <ImageView
+                        android:id="@+id/iv_owner_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/market_info"
+                        android:paddingTop="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="16"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="250"
+                android:orientation="horizontal"
+                android:weightSum="330">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="300">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/shape_rect"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:elevation="3dp">
+
+                        <TextView android:id="@+id/tv_amount_outstanding_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="미결제금액"
+                            android:textSize="17dp"
+                            android:textColor="#000"
+                            android:fontFamily="@font/notosanskrmedium"
+                            android:gravity="left"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="30dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="11dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="left"
+                            android:paddingLeft="30dp">
+
+                            <TextView
+                                android:id="@+id/tv_amount_outstanding"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/robotobold"
+                                android:textColor="#d12828"
+                                android:textSize="30dp"
+                                android:includeFontPadding="false"/>
+
+                            <TextView android:id="@+id/tv_won"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/robotobold"
+                                android:textColor="#d12828"
+                                android:textSize="18dp"
+                                android:text=" 원"
+                                android:gravity="center"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="14dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="left"
+                            android:paddingLeft="30dp"
+                            android:paddingBottom="5dp">
+                            <TextView
+                                android:id="@+id/tv_bank"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/notosanskrregular"
+                                android:textSize="15dp"
+                                android:textColor="#000"
+                                android:includeFontPadding="false"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="left"
+                            android:paddingLeft="30dp"
+                            android:paddingBottom="5dp">
+                            <TextView android:id="@+id/tv_bank_account"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/robotomedium"
+                                android:textSize="16dp"
+                                android:textColor="#000"
+                                android:includeFontPadding="false"
+                                android:gravity="left"
+                                android:layout_gravity="left"/>
+                            <TextView android:id="@+id/tv_bank_account_holder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:fontFamily="@font/robotomedium"
+                                android:textSize="16dp"
+                                android:textColor="#000"
+                                android:layout_marginLeft="5dp"
+                                android:includeFontPadding="false"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="left"
+                            android:paddingLeft="30dp">
+                            <TextView android:id="@+id/tv_label_payment_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="결제일"
+                                android:fontFamily="@font/notosanskrregular"
+                                android:textSize="15dp"
+                                android:textColor="#666666"
+                                android:includeFontPadding="false"
+                                android:gravity="left"
+                                android:layout_gravity="left"/>
+                            <TextView
+                                android:id="@+id/tv_payment_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:fontFamily="@font/robotomedium"
+                                android:textSize="16dp"
+                                android:textColor="#666666"
+                                android:layout_marginLeft="5dp"
+                                android:includeFontPadding="false"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="66"
+                android:orientation="horizontal"
+                android:weightSum="330">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="300"
+                    android:gravity="center">
+
+
+                        <ImageView
+                            android:id="@+id/iv_talk"
+                            android:layout_width="89dp"
+                            android:layout_height="77dp"
+                            android:text="망고톡"
+                            android:src="@drawable/btn_talk"/>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="55dp"
+                            android:background="@drawable/vline"/>
+
+                        <ImageView
+                            android:id="@+id/iv_notice"
+                            android:layout_width="120dp"
+                            android:layout_height="77dp"
+                            android:text="가맹점별 공지사항"
+                            android:src="@drawable/btn_notice"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/vline"/>
+
+                        <ImageView
+                            android:id="@+id/iv_self_check"
+                            android:layout_width="89dp"
+                            android:layout_height="77dp"
+                            android:text="자가점검"
+                            android:src="@drawable/btn_self"/>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="23"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="70"
+                android:orientation="horizontal"
+                android:weightSum="330">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="300"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="300">
+
+                    <TextView
+                        android:id="@+id/tv_order"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="150"
+                        android:text="주문등록"
+                        android:background="@drawable/shape_main_order"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/notosanskrmedium"
+                        android:textColor="#FFF"
+                        android:layout_marginRight="15dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="150"
+                        android:text="주문현황"
+                        android:background="@drawable/shape_main_status"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/notosanskrmedium"
+                        android:textColor="#FFF"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="48"
+        android:background="@drawable/logout"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

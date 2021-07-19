@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:padding="10dp"
+    android:weightSum="360"
+    android:orientation="horizontal"
+    android:background="@drawable/shape_stroke_order_list">
+
+    <TextView
+        android:id="@+id/tv_order_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="150"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/notosanskrregular"
+        android:includeFontPadding="false"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="60"
+        android:background="@drawable/shape_stroke_all"
+        android:gravity="right"
+        android:paddingRight="7dp">
+
+
+        <EditText
+            android:id="@+id/et_order_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:background="@android:color/transparent"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/robotoregular"
+            android:includeFontPadding="false"
+            android:selectAllOnFocus="true"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_order_unit"
+        android:layout_width="0dp"
+
+        android:layout_height="match_parent"
+        android:layout_weight="40"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:layout_marginLeft="3dp"
+        android:fontFamily="@font/robotoregular"
+        android:includeFontPadding="false"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="110"
+        android:gravity="right"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="110"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:textSize="17dp"
+            android:textColor="#000"
+            android:fontFamily="@font/robotoregular"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:id="@+id/ib_order_delete_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#911E11"
+            android:text="삭제"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

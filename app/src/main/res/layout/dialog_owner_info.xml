@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center_vertical">
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@drawable/ic_bg_owner_info_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/tv_owner_info_bnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:gravity="top"
+            android:layout_gravity="top"
+            android:fontFamily="@font/notosanskrregular"
+            android:textSize="16dp"
+            android:includeFontPadding="false"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:gravity="top"
+                android:layout_gravity="top"
+                android:fontFamily="@font/notosanskrregular"
+                android:textSize="16dp"
+                android:includeFontPadding="false"
+                android:text="• 주소 : "/>
+            <TextView
+                android:id="@+id/tv_owner_info_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:gravity="top"
+                android:layout_gravity="top"
+                android:fontFamily="@font/notosanskrregular"
+                android:textSize="16dp"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_owner_info_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:gravity="top"
+            android:layout_gravity="top"
+            android:fontFamily="@font/notosanskrregular"
+            android:textSize="16dp"
+            android:includeFontPadding="false"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:id="@+id/tv_owner_info_manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:gravity="top"
+            android:layout_gravity="top"
+            android:fontFamily="@font/notosanskrregular"
+            android:textSize="16dp"
+            android:includeFontPadding="false"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:background="@drawable/ic_bg_owner_info_bottom"/>
+
+</LinearLayout>
